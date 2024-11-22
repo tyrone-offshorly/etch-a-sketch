@@ -14,9 +14,17 @@ body {
 }
 .square {
   box-sizing: border-box;
-  border: 1px solid gray;
 }
 .column {
   display: flex;
   flex-direction: column;
+}
+
+button {
+  margin-bottom: 12px;
+  outline: none;
+  font-size: 24px;
+  background-color: lightblue;
+  padding: 12px;
+  border-color: blue;
 }
