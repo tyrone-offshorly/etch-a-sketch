@@ -18,6 +18,7 @@ const calculateSquareHeight = (num) => {
   return height;
 }
 const populateGrid = (num, container) => {
+  container.innerHTML = '';
   const squareHeight = calculateSquareHeight(num);
   const squareWidth = calculateSquareWidth(num);
   console.log(squareHeight);
@@ -41,4 +42,13 @@ const populateGrid = (num, container) => {
 }
 
 const container = document.querySelector("#container");
+const btn = document.querySelector('#sizeBtn');
+btn.addEventListener('click', () => {
+  const newSize = Math.floor(Number(prompt("Set new grid size (1-100)")));
+  if (newSize > 100) {
+    alert("Invalid input, please enter a value from 1 to 100");
+  } else {
+    populateGrid(newSize, container);
+  }
+});
 populateGrid(16, container);
