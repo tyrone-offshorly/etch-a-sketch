@@ -1,0 +1,11 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 24px;
+  justify-content: center;
+}
+#container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
